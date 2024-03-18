@@ -103,7 +103,7 @@ function scorerPrompt() {
       // Can immediately return the valid object
       return scoringAlgorithms[userCandidate];
    }
-}
+};
 
 function transform(pointStructure){
    const transformedObject = {};
@@ -122,7 +122,7 @@ function runProgram() {
    const runScore = initialPrompt();
    const getScore = scorerPrompt();
    console.log(`Score for '${runScore}': ${getScore['scoringFunction'](runScore)}`);
-}
+};
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
